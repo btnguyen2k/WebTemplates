@@ -1,0 +1,100 @@
+/* 
+Need any help for business ltd template? : Contact
+=============================
+-----------------------------
+	Adhikari Surya
+	Frontend Web Developer
+	Email: adh.surya@gmail.com
+-----------------------------
+=============================
+ */
+/* Needed for animations -----------*/
+body{position:relative; top:3000px;}
+.wrapper{position:relative}
+.carousel-caption {display:block; top:-1000px; left:4%; padding:1%;bottom:auto;max-width:45%;border-radius:8px;text-align:left}
+#bannerSection{overflow:hidden;}
+#bannerSection h1{position:relative; right:-2400px}
+#headerSection .navbar .pull-right {top: 1000px;}
+#bodySection{position:relative; left:-3000px}
+#middleSection{position:relative; top:-800px}
+/* ------------------- */
+a, a:link, a:active, a:hover, img{outline:none;}
+.navbar .brand {font-size: 28px;}
+.well:hover, .thumbnail:hover {-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);}
+.center{text-align:center}
+#toTop {}
+/* home page */
+#carouselSection{border-top:4px solid #D33800; border-bottom: 4px solid #717171; background: #000; color:#fff; margin-bottom:18px;}
+#carouselSection .carousel{margin-bottom:0}
+#carouselSection .wrapper { max-width: 1200px; margin: 0 auto; }
+#carouselSection .carousel-caption p{display:block; margin-bottom:18px}
+#carouselSection h2{color:#fff; margin:10px 0; }
+/* Sections------------------------- */
+#headerSection{ background:url(../images/headerbg.png) repeat-x 0 0 ;}
+#headerSection .navbar { padding-top:20px; margin-bottom: 0;}
+#headerSection .navbar .brand {padding: 5px 20px 5px; color: #000;text-shadow: 0 0px 0 white;font-weight: bold; line-height: 1.3em;}
+#mapSection, #carouselSection{border-top:4px solid #D33800; border-bottom: 4px solid #717171; background: #000; color:#fff}
+#bannerSection{border-top:4px solid #D33800; border-bottom:4px solid #717171; color:#fff}
+#bodySection{background: url(../images/shadowsReverse.png) no-repeat center top ; padding: 31px 0 0; text-align:center}
+#bannerSection{border-top:4px solid #D33800; border-bottom:4px solid #717171;}
+#bannerSection h1 {color:#fff; padding: 18px 0;text-align: center;font-weight: bold;}
+.carousel-caption {background: rgba(140, 20, 0, 0.85);}
+.carousel:hover .carousel-control {display:block;}
+.carousel-control, .carousel-control:hover{display:none;background: transparent;color: #D33800;top: 50%;}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {text-decoration: none;-webkit-box-shadow: inset 0 3px 8px #000;-moz-box-shadow: inset 0 3px 8px #000;box-shadow: none;border-bottom:0;}
+.btn:hover,.btn-warning,
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus ,.nav-pills > .active > a, 
+.nav-pills > .active > a:hover, #headerSection .active,
+.dropdown-menu li > a:hover{color: #fff; background:url(../images/tabrepeat.png) repeat-x #d33800; }
+.navbar .nav > li > a:hover {color:#d33800;}
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar .nav > li,.nav-pills > li > a {background:url(../images/tabRepeatInactive.png) repeat-x #f9f9f9;}
+.navbar .nav > li,.nav-pills > li > a {border: 1px solid #dedede;}
+.navbar .nav.pull-right {margin-bottom: -1px;}
+.navbar .nav > li.active {border: 1px solid #D33800;box-shadow: 0px -4px 4px #ccc; border-bottom: 0;}
+.navbar .nav > li {float: left; margin: 0 1px 1px; border-radius: 4px 4px 0 0;border-bottom:0;}
+.navbar .nav > li > a { display:block; padding: 10px 15px 10px;padding: 14px 15px;color: #666;text-decoration: none;text-shadow: 0 0 0 black;}
+#bodySection .thumbnail{overflow:hidden;}
+#bodySection .thumbnail h3,  #bodySection .thumbnail h4, #bodySection .thumbnail h4 { margin:-4px -4px 4px; line-height:44px; }
+#bodySection .well h4,  #bodySection .well h3 { margin:-9px -9px 9px; line-height:44px; padding:0 18px; }
+#middleSection .well h4{ margin:-9px -9px 9px; line-height:44px;}
+#middleSection .span2{background: url(../images/smallShadows.png) no-repeat center 134px ;}
+#middleSection  .span2:hover{background:none;} 
+#middleSection{ background:url(../images/shadow.png) no-repeat center bottom ; padding:28px 0}
+#middleSection  .span12 .well{background:none; border:0;-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.05);box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.05);}
+#middleSection  .span12  h4{background:none; border:0}
+#clientsSection{padding:44px 0;}
+#clientsSection a{margin:0 8px;}
+#clientsSection a:hover{text-decoration:none}
+#footerSection{background: url(../images/footerbg.png) repeat 0 0; color:#fff; padding:28px 0 0; border-top: 1px solid #FE5214;}
+#footerSection .well{background:none; color:#fff; border:0}
+#footerSection .media, #bodySection .media{text-align:left;}
+#footerSection .media img, #bodySection .media img{border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; }
+/* Responsive--------------------- */
+/* Large desktop */
+@media (min-width: 1200px) {  }
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+#middleSection .well a span {font-size: 13px; margin: 0 -18px;}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.navbar .nav > li {
+float: none}
+#footerSection, #carouselSection, #footerSection, #bannerSection {margin: 0 -20px;}
+#carouselSection .carousel-caption{background:none}
+#carouselSection .carousel-caption h2, #carouselSection .carousel-caption p{ display:none;}
+#carouselSection {background-image: none; border-bottom:1px solid #ddd}
+#headerSection, #footerSection, #mapSection{margin:0 -20px}
+.navbar .nav > li {border-radius: 0; border: 0;}
+.navbar .nav > li.active {border: 0; }
+#middleSection .well a span {font-size: 13px; margin: 0 -18px;}
+ }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+#carouselSection .carousel-caption {position: absolute;}
+}
+/* ====================================================== */
