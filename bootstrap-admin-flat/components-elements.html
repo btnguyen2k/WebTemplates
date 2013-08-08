@@ -1,0 +1,814 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap responsive -->
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<!-- Notify -->
+	<link rel="stylesheet" href="css/plugins/gritter/jquery.gritter.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="css/themes.css">
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
+	<!-- slimScroll -->
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootbox -->
+	<script src="js/plugins/bootbox/jquery.bootbox.js"></script>
+	<!-- Notify -->
+	<script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+	<!-- Theme framework -->
+	<script src="js/eakroko.min.js"></script>
+	<!-- Theme scripts -->
+	<script src="js/application.min.js"></script>
+	<!-- Just for demonstration -->
+	<script src="js/demonstration.min.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<!-- Apple devices Homescreen icon -->
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+
+</head>
+
+<body>
+	<div id="modal-1" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<p>One fine body…</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			<button class="btn btn-primary" data-dismiss="modal">Save changes</button>
+		</div>
+	</div>
+	<div id="modal-2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<p>One fine body…</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			<button class="btn btn-primary" data-dismiss="modal">Save changes</button>
+		</div>
+	</div>
+	<div id="modal-3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<p>One fine body…</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">No</button>
+			<button class="btn btn-primary" data-dismiss="modal">Yes</button>
+		</div>
+	</div>
+	<div id="modal-4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<p>One fine body…</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary" data-dismiss="modal">Ok</button>
+		</div>
+	</div>
+	<div id="navigation">
+		<div class="container-fluid">
+			<a href="#" id="brand">FLAT</a>
+			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle navigation"><i class="icon-reorder"></i></a>
+			<ul class='main-nav'>
+				<li>
+					<a href="index.html">
+						<i class="icon-home"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<i class="icon-edit"></i>
+						<span>Forms</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="forms-basic.html">Basic forms</a>
+						</li>
+						<li>
+							<a href="forms-extended.html">Extended forms</a>
+						</li>
+						<li>
+							<a href="forms-validation.html">Validation</a>
+						</li>
+						<li>
+							<a href="forms-wizard.html">Wizard</a>
+						</li>
+					</ul>
+				</li>
+				<li class='active'>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<i class="icon-th-large"></i>
+						<span>Components</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="components-messages.html">Messages &amp; Chat</a>
+						</li>
+						<li>
+							<a href="components-gallery.html">Gallery &amp; Thumbs</a>
+						</li>
+						<li>
+							<a href="components-tiles.html">Tiles</a>
+						</li>
+						<li>
+							<a href="components-icons.html">Icons &amp; Buttons</a>
+						</li>
+						<li class='active'>
+							<a href="components-elements.html">UI elements</a>
+						</li>
+						<li>
+							<a href="components-typography.html">Typography</a>
+						</li>
+						<li>
+							<a href="components-bootstrap.html">Bootstrap elements</a>
+						</li>
+						<li>
+							<a href="components-grid.html">Grid</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<i class="icon-table"></i>
+						<span>Tables</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="tables-basic.html">Basic tables</a>
+						</li>
+						<li>
+							<a href="tables-dynamic.html">Dynamic tables</a>
+						</li>
+						<li>
+							<a href="tables-large.html">Large tables</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<i class="icon-th-large"></i>
+						<span>Plugins</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="plugins-charts.html">Charts</a>
+						</li>
+						<li>
+							<a href="plugins-calendar.html">Calendar</a>
+						</li>
+						<li>
+							<a href="plugins-filemanager.html">File manager</a>
+						</li>
+						<li>
+							<a href="plugins-filetrees.html">File trees</a>
+						</li>
+						<li>
+							<a href="plugins-elements.html">Editable elements</a>
+						</li>
+						<li>
+							<a href="plugins-maps.html">Maps</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<i class="icon-th"></i>
+						<span>Pages</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="more-error.html">Error pages</a>
+						</li>
+						<li>
+							<a href="more-invoice.html">Invoice</a>
+						</li>
+						<li>
+							<a href="more-userprofile.html">User profile</a>
+						</li>
+						<li>
+							<a href="more-searchresults.html">Search results</a>
+						</li>
+						<li>
+							<a href="more-login.html">Login</a>
+						</li>
+						<li>
+							<a href="more-blank.html">Blank page</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user">
+				<ul class="icon-nav">
+					<li class="dropdown sett">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings">
+							<li>
+								<span>Layout-width</span>
+								<div class="version-toggle">
+									<a href="#" class='set-fixed'>Fixed</a>
+									<a href="#" class="active set-fluid">Fluid</a>
+								</div>
+							</li>
+							<li>
+								<span>Topbar</span>
+								<div class="topbar-toggle">
+									<a href="#" class='set-topbar-fixed'>Fixed</a>
+									<a href="#" class="active set-topbar-default">Default</a>
+								</div>
+							</li>
+							<li>
+								<span>Sidebar</span>
+								<div class="sidebar-toggle">
+									<a href="#" class='set-sidebar-fixed'>Fixed</a>
+									<a href="#" class="active set-sidebar-default">Default</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class='dropdown colo'>
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-tint"></i></a>
+						<ul class="dropdown-menu pull-right theme-colors">
+							<li class="subtitle">
+								Predefined colors
+							</li>
+							<li>
+								<span class='red'></span>
+								<span class='orange'></span>
+								<span class='green'></span>
+								<span class="brown"></span>
+								<span class="blue"></span>
+								<span class='lime'></span>
+								<span class="teal"></span>
+								<span class="purple"></span>
+								<span class="pink"></span>
+								<span class="magenta"></span>
+								<span class="grey"></span>
+								<span class="darkblue"></span>
+								<span class="lightred"></span>
+								<span class="lightgrey"></span>
+								<span class="satblue"></span>
+								<span class="satgreen"></span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="more-locked.html" class='lock-screen' rel='tooltip' title="Lock screen" data-placement="bottom"><i class="icon-lock"></i></a>
+					</li>
+				</ul>
+				<div class="dropdown">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">John Doe <img src="img/demo/user-avatar.jpg" alt=""></a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="more-userprofile.html">Edit profile</a>
+						</li>
+						<li>
+							<a href="#">Account settings</a>
+						</li>
+						<li>
+							<a href="more-login.html">Sign out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="content">
+		<div id="left">
+			<form action="http://www.eakroko.de/flat/search-results.html" method="GET" class='search-form'>
+				<div class="search-pane">
+					<input type="text" name="search" placeholder="Search here...">
+					<button type="submit"><i class="icon-search"></i></button>
+				</div>
+			</form>
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Content</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Articles</a>
+					</li>
+					<li>
+						<a href="#">News</a>
+					</li>
+					<li>
+						<a href="#">Pages</a>
+					</li>
+					<li>
+						<a href="#">Comments</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Plugins</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Cache manager</a>
+					</li>
+					<li>
+						<a href="#">Import manager</a>
+					</li>
+					<li>
+						<a href="#">Contact form generator</a>
+					</li>
+					<li>
+						<a href="#">SEO optimization</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Settings</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Theme settings</a>
+					</li>
+					<li>
+						<a href="#">Page settings</a>
+					</li>
+					<li>
+						<a href="#">Security settings</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>UI Elements</h1>
+					</div>
+					<div class="pull-right">
+						<ul class="minitiles">
+							<li class='teal'>
+								<a href="#"><i class="icon-inbox"></i></a>
+							</li>
+							<li class='red'>
+								<a href="#"><i class="icon-cogs"></i></a>
+							</li>
+							<li class='lime'>
+								<a href="#"><i class="icon-globe"></i></a>
+							</li>
+						</ul>
+						<ul class="stats">
+							<li class='blue'>
+								<i class="icon-shopping-cart"></i>
+								<div class="details">
+									<span class="big">175</span>
+									<span>New orders</span>
+								</div>
+							</li>
+							<li class='green'>
+								<i class="icon-money"></i>
+								<div class="details">
+									<span class="big">$324,12</span>
+									<span>Balance</span>
+								</div>
+							</li>
+							<li class='orange'>
+								<i class="icon-calendar"></i>
+								<div class="details">
+									<span class="big">February 22, 2013</span>
+									<span>Wednesday, 13:56</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="more-login.html">Home</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="components-messages.html">Components</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="components-elements.html">UI elements</a>
+						</li>
+					</ul>
+					<div class="close-bread">
+						<a href="#"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="icon-reorder"></i>
+									Basic widget
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								Lorem ipsum velit dolor veniam occaecat do eiusmod velit cillum sit. Lorem ipsum laborum sed Duis in in dolor in exercitation irure. Lorem ipsum ad proident ut in mollit id ullamco Ut. Lorem ipsum magna eiusmod in anim deserunt adipisicing. Lorem ipsum ex dolore sint consectetur eu non mollit Ut dolore aliquip anim. Lorem ipsum labore ad Ut Duis Excepteur consequat non. Lorem ipsum ut quis ea dolore esse Duis cillum amet eu officia nostrud. Lorem ipsum dolor aliquip cillum ea ut id pariatur ad aute mollit in qui. Lorem ipsum magna ut consectetur incididunt sed consectetur ut ullamco dolore Excepteur deserunt. Lorem ipsum mollit ad Excepteur dolore non dolor occaecat reprehenderit eiusmod mollit ut Excepteur dolore dolor ex. Lorem ipsum nisi exercitation cillum velit tempor aliqua nisi non. Lorem ipsum enim magna adipisicing do adipisicing aliquip ex pariatur dolore proident fugiat mollit dolor. 
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box box-color">
+							<div class="box-title">
+								<h3>
+									<i class="icon-reorder"></i>
+									Colored widget
+								</h3>
+								<ul class="tabs">
+									<li class="active">
+										<a href="#t7" data-toggle="tab">Sample tab #1</a>
+									</li>
+									<li>
+										<a href="#t8" data-toggle="tab">Sample tab #2</a>
+									</li>
+									<li>
+										<a href="#t9" data-toggle="tab">Third tab</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box-content">
+								<div class="tab-content">
+									<div class="tab-pane active" id="t7">
+										<h4>First tab</h4>
+										Lorem ipsum anim ad culpa ex id anim Excepteur esse et do cillum dolor in dolore cillum. Lorem ipsum Ut est consequat pariatur sint ut incididunt nisi dolore occaecat. 
+									</div>
+									<div class="tab-pane" id="t8">
+										<h4>Second tab</h4>
+										Lorem ipsum ad proident amet anim voluptate ea. Lorem ipsum voluptate et ex esse mollit labore aliquip culpa dolore culpa anim cillum nulla ut sunt. Lorem ipsum veniam sunt voluptate elit minim incididunt occaecat aute ut ut sunt laboris. Lorem ipsum cupidatat labore elit sit in aliqua nostrud adipisicing minim et mollit sunt Ut cupidatat laboris. Lorem ipsum sunt ut labore nostrud ut aliqua dolor sint cupidatat sit Duis in culpa consectetur exercitation. Lorem ipsum sunt anim reprehenderit elit minim nulla ut. 
+									</div>
+									<div class="tab-pane" id="t9">
+										<h4>Another tab</h4>
+										Lorem ipsum commodo dolor sit in sint anim ad ut non et. Lorem ipsum cillum ex sunt ea irure Ut dolore in labore officia nostrud in anim culpa sit esse. Lorem ipsum elit Duis magna et voluptate Duis non pariatur esse laboris nisi laborum nulla. Lorem ipsum et tempor ea ad in id consectetur incididunt velit Excepteur officia. Lorem ipsum non consectetur Excepteur commodo aute anim sunt. Lorem ipsum pariatur esse nulla mollit Duis ex. Lorem ipsum cillum sit in ad consequat in ad enim incididunt ea laborum pariatur Excepteur aliqua nostrud ut. Lorem ipsum et magna laboris reprehenderit mollit reprehenderit aute Duis aliquip officia nulla. Lorem ipsum dolor Ut dolore in laborum elit dolore quis mollit ut sit Excepteur aute. Lorem ipsum quis et eiusmod in irure tempor ea labore cillum dolore labore eiusmod in occaecat qui ea. Lorem ipsum dolor fugiat deserunt incididunt eiusmod sunt magna reprehenderit sed enim ut cillum. Lorem ipsum irure pariatur exercitation sunt eiusmod dolore Ut do ut ut minim. Lorem ipsum do ea pariatur in anim deserunt Excepteur nisi culpa nisi aliquip culpa veniam ut non. 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h3>
+									<i class="icon-reorder"></i>
+									Bordered widget
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								Lorem ipsum velit dolor veniam occaecat do eiusmod velit cillum sit. Lorem ipsum laborum sed Duis in in dolor in exercitation irure. Lorem ipsum ad proident ut in mollit id ullamco Ut. Lorem ipsum magna eiusmod in anim deserunt adipisicing. Lorem ipsum ex dolore sint consectetur eu non mollit Ut dolore aliquip anim. Lorem ipsum labore ad Ut Duis Excepteur consequat non. Lorem ipsum ut quis ea dolore esse Duis cillum amet eu officia nostrud. Lorem ipsum dolor aliquip cillum ea ut id pariatur ad aute mollit in qui. Lorem ipsum magna ut consectetur incididunt sed consectetur ut ullamco dolore Excepteur deserunt. Lorem ipsum mollit ad Excepteur dolore non dolor occaecat reprehenderit eiusmod mollit ut Excepteur dolore dolor ex. Lorem ipsum nisi exercitation cillum velit tempor aliqua nisi non. Lorem ipsum enim magna adipisicing do adipisicing aliquip ex pariatur dolore proident fugiat mollit dolor. 
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box box-color box-bordered">
+							<div class="box-title">
+								<h3>
+									<i class="icon-reorder"></i>
+									Bordered &amp; Colored
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								Lorem ipsum ut in consectetur non sunt laboris minim tempor. Lorem ipsum Duis occaecat labore eu reprehenderit tempor nisi ea. Lorem ipsum adipisicing fugiat dolor voluptate aliquip id ut commodo magna dolor eu aute dolor in velit minim. Lorem ipsum mollit nostrud aliqua ut culpa dolor. Lorem ipsum commodo consectetur aute ullamco Duis nisi quis cupidatat. Lorem ipsum incididunt amet dolor voluptate est irure. Lorem ipsum magna amet anim aliquip aute sit voluptate minim enim magna. 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h3>
+									<i class="icon-reorder"></i>
+									Tabs
+								</h3>
+								<ul class="tabs">
+									<li class="active">
+										<a href="#t1" data-toggle="tab">Sample tab #1</a>
+									</li>
+									<li>
+										<a href="#t2" data-toggle="tab">Sample tab #2</a>
+									</li>
+									<li>
+										<a href="#t3" data-toggle="tab">Third tab</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box-content">
+								<div class="tab-content">
+									<div class="tab-pane active" id="t1">
+										<h4>First tab</h4>
+										Lorem ipsum anim ad culpa ex id anim Excepteur esse et do cillum dolor in dolore cillum. Lorem ipsum Ut est consequat pariatur sint ut incididunt nisi dolore occaecat. 
+									</div>
+									<div class="tab-pane" id="t2">
+										<h4>Second tab</h4>
+										Lorem ipsum ad proident amet anim voluptate ea. Lorem ipsum voluptate et ex esse mollit labore aliquip culpa dolore culpa anim cillum nulla ut sunt. Lorem ipsum veniam sunt voluptate elit minim incididunt occaecat aute ut ut sunt laboris. Lorem ipsum cupidatat labore elit sit in aliqua nostrud adipisicing minim et mollit sunt Ut cupidatat laboris. Lorem ipsum sunt ut labore nostrud ut aliqua dolor sint cupidatat sit Duis in culpa consectetur exercitation. Lorem ipsum sunt anim reprehenderit elit minim nulla ut. 
+									</div>
+									<div class="tab-pane" id="t3">
+										<h4>Another tab</h4>
+										Lorem ipsum commodo dolor sit in sint anim ad ut non et. Lorem ipsum cillum ex sunt ea irure Ut dolore in labore officia nostrud in anim culpa sit esse. Lorem ipsum elit Duis magna et voluptate Duis non pariatur esse laboris nisi laborum nulla. Lorem ipsum et tempor ea ad in id consectetur incididunt velit Excepteur officia. Lorem ipsum non consectetur Excepteur commodo aute anim sunt. Lorem ipsum pariatur esse nulla mollit Duis ex. Lorem ipsum cillum sit in ad consequat in ad enim incididunt ea laborum pariatur Excepteur aliqua nostrud ut. Lorem ipsum et magna laboris reprehenderit mollit reprehenderit aute Duis aliquip officia nulla. Lorem ipsum dolor Ut dolore in laborum elit dolore quis mollit ut sit Excepteur aute. Lorem ipsum quis et eiusmod in irure tempor ea labore cillum dolore labore eiusmod in occaecat qui ea. Lorem ipsum dolor fugiat deserunt incididunt eiusmod sunt magna reprehenderit sed enim ut cillum. Lorem ipsum irure pariatur exercitation sunt eiusmod dolore Ut do ut ut minim. Lorem ipsum do ea pariatur in anim deserunt Excepteur nisi culpa nisi aliquip culpa veniam ut non. 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box box-color green box-bordered">
+							<div class="box-title">
+								<h3>
+									<i class="icon-tint"></i>
+									Specific color
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								You can set the box to a specific color!
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<ul class="tabs tabs-left">
+									<li class="active">
+										<a href="#t10" data-toggle="tab">Sample tab #1</a>
+									</li>
+									<li>
+										<a href="#t11" data-toggle="tab">Sample tab #2</a>
+									</li>
+									<li>
+										<a href="#t12" data-toggle="tab">Third tab</a>
+									</li>
+								</ul>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								<div class="tab-content">
+									<div class="tab-pane active" id="t10">
+										<h4>You can also have tabs &amp; action buttons</h4>
+										<p>
+											Tabs on the left
+										</p>
+									</div>
+									<div class="tab-pane" id="t11">
+										<h4>Second tab</h4>
+										Lorem ipsum ad proident amet anim voluptate ea. Lorem ipsum voluptate et ex esse mollit labore aliquip culpa dolore culpa anim cillum nulla ut sunt. Lorem ipsum veniam sunt voluptate elit minim incididunt occaecat aute ut ut sunt laboris. Lorem ipsum cupidatat labore elit sit in aliqua nostrud adipisicing minim et mollit sunt Ut cupidatat laboris. Lorem ipsum sunt ut labore nostrud ut aliqua dolor sint cupidatat sit Duis in culpa consectetur exercitation. Lorem ipsum sunt anim reprehenderit elit minim nulla ut. 
+									</div>
+									<div class="tab-pane" id="t12">
+										<h4>Another tab</h4>
+										Lorem ipsum commodo dolor sit in sint anim ad ut non et. Lorem ipsum cillum ex sunt ea irure Ut dolore in labore officia nostrud in anim culpa sit esse. Lorem ipsum elit Duis magna et voluptate Duis non pariatur esse laboris nisi laborum nulla. Lorem ipsum et tempor ea ad in id consectetur incididunt velit Excepteur officia. Lorem ipsum non consectetur Excepteur commodo aute anim sunt. Lorem ipsum pariatur esse nulla mollit Duis ex. Lorem ipsum cillum sit in ad consequat in ad enim incididunt ea laborum pariatur Excepteur aliqua nostrud ut. Lorem ipsum et magna laboris reprehenderit mollit reprehenderit aute Duis aliquip officia nulla. Lorem ipsum dolor Ut dolore in laborum elit dolore quis mollit ut sit Excepteur aute. Lorem ipsum quis et eiusmod in irure tempor ea labore cillum dolore labore eiusmod in occaecat qui ea. Lorem ipsum dolor fugiat deserunt incididunt eiusmod sunt magna reprehenderit sed enim ut cillum. Lorem ipsum irure pariatur exercitation sunt eiusmod dolore Ut do ut ut minim. Lorem ipsum do ea pariatur in anim deserunt Excepteur nisi culpa nisi aliquip culpa veniam ut non. 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="span6">
+						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="icon-reorder"></i>
+									Accordion
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								<div class="accordion" id="accordion2">
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+												Collapsible Group Item #1
+											</a>
+										</div>
+										<div id="collapseOne" class="accordion-body collapse in">
+											<div class="accordion-inner">
+												Anim pariatur cliche...Lorem ipsum dolore dolor occaecat dolore elit deserunt incididunt ex sed nostrud aute aliquip ut elit sed nisi. 
+											</div>
+										</div>
+									</div>
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+												Collapsible Group Item #2
+											</a>
+										</div>
+										<div id="collapseTwo" class="accordion-body collapse">
+											<div class="accordion-inner">
+												Anim pariatur cliche...Lorem ipsum Duis occaecat Excepteur est magna tempor ex ea enim sunt mollit proident. Lorem ipsum sed laboris ut adipisicing ut et aute occaecat aute enim occaecat. 
+											</div>
+										</div>
+									</div>
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+												Collapsible Group Item #3
+											</a>
+										</div>
+										<div id="collapseThree" class="accordion-body collapse">
+											<div class="accordion-inner">
+												Anim pariatur cliche...Lorem ipsum do culpa adipisicing quis non nisi ullamco. Lorem ipsum velit dolore qui Excepteur fugiat et dolor proident reprehenderit magna aliqua enim consectetur nisi. Lorem ipsum sit laborum est magna veniam ex ut velit do aliqua amet dolore enim minim eu. Lorem ipsum adipisicing officia occaecat deserunt enim minim veniam sint amet sed consectetur nisi quis. 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box box-color box-bordered magenta">
+							<div class="box-title">
+								<h3>
+									<i class="icon-comment"></i>
+									Tooltips
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								<p>
+									<h4>Tooltips</h4>
+									<a href="#" class="btn" rel="tooltip" title="Default Tooltip">Default tooltip</a>
+									<a href="#" class="btn" rel="tooltip" title="Right Tooltip" data-placement="right">Right tooltip</a>
+									<a href="#" class="btn" rel="tooltip" title="Left Tooltip" data-placement="left">Left tooltip</a>
+									<a href="#" class="btn" rel="tooltip" title="Bottom Tooltip" data-placement="bottom">Bottom tooltip</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box box-color box-bordered lime">
+							<div class="box-title">
+								<h3>
+									<i class="icon-reorder"></i>
+									Modals
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								<p>
+									<h4>Modals</h4>
+									<a href="#modal-1" role="button" class="btn" data-toggle="modal">Basic modal</a>
+									<a href="#modal-2" role="button" class="btn" data-toggle="modal">Modal with animation</a>
+									<a href="#modal-4" role="button" class="btn" data-toggle="modal">Alert</a>
+									<a href="#modal-3" role="button" class="btn" data-toggle="modal">Confirm</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box box-color box-bordered orange">
+							<div class="box-title">
+								<h3>
+									<i class="icon-comment-alt"></i>
+									popovers
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								<p>
+									<h4>Popover</h4>
+									<a href="#" class="btn" rel="popover" data-trigger="hover" title="Default popover" data-content="Lorem ipsum et dolor aute deserunt nisi do. Lorem ipsum irure aute officia id pariatur ex adipisicing deserunt velit consequat cupidatat adipisicing commodo. Lorem ipsum ad fugiat velit elit et non id. ">Default popover</a>
+									<a href="#" class="btn" rel="popover" data-trigger="hover" title="Right popover" data-placement="top" data-content="Lorem ipsum et dolor aute deserunt nisi do. Lorem ipsum irure aute officia id pariatur ex adipisicing deserunt velit consequat cupidatat adipisicing commodo. Lorem ipsum ad fugiat velit elit et non id. ">Top popover</a>
+									<a href="#" class="btn" rel="popover" data-trigger="hover" title="Left popover" data-placement="left" data-content="Lorem ipsum et dolor aute deserunt nisi do. Lorem ipsum irure aute officia id pariatur ex adipisicing deserunt velit consequat cupidatat adipisicing commodo. Lorem ipsum ad fugiat velit elit et non id. ">Left popover</a>
+									<a href="#" class="btn" rel="popover" data-trigger="hover" title="Bottom popover" data-placement="bottom" data-content="Lorem ipsum et dolor aute deserunt nisi do. Lorem ipsum irure aute officia id pariatur ex adipisicing deserunt velit consequat cupidatat adipisicing commodo. Lorem ipsum ad fugiat velit elit et non id. ">Bottom popover</a>
+									<a href="#" class="btn" rel="popover" title="Hover popover" data-placement="top" data-content="Lorem ipsum et dolor aute deserunt nisi do. Lorem ipsum irure aute officia id pariatur ex adipisicing deserunt velit consequat cupidatat adipisicing commodo. Lorem ipsum ad fugiat velit elit et non id. ">Click popover</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box box-color box-bordered red">
+							<div class="box-title">
+								<h3>
+									<i class="icon-bell"></i>
+									Notifications
+								</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-refresh"><i class="icon-refresh"></i></a>
+									<a href="#" class="btn btn-mini content-remove"><i class="icon-remove"></i></a>
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								<p>
+									<h4>Notifications</h4>
+									<code>pure HTML (<strong>NO</strong> javascript needed!)</code>
+								</p>
+								<p><a href="#modal-1" role="button" class="btn notify" data-notify-title="Success!" data-notify-message="The user has been successfully edited.">Basic notification</a>
+									<a href="#modal-1" role="button" class="btn notify" data-notify-time="1000" data-notify-title="Success!" data-notify-message="The user has been successfully edited.">Timed fade notification (1second)</a>
+									<a href="#modal-1" role="button" class="btn notify" data-notify-title="WARNING!" data-notify-message="Please refresh the cache!" data-notify-sticky="true">Sticky notification</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div></div>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38620714-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+
+	</html>
+
